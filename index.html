@@ -109,6 +109,21 @@
 
 
 		<!-- Mobile menu -->
+		
+		
+		
+				<!-- Progress bar mobile scroll starts -->
+		<div class="mobile-bar visible-sm visible-xs" style="background:#ffffff00; margin-top:60px;">
+			
+				<div class="mprogress-container">
+					<div class="mprogress-bar" id="mymBar"></div>
+				</div> 
+		</div>
+		 <!-- Progress bar mobile scroll ends --> 
+		
+		
+		
+		
 		<div class="mobile-bar visible-sm visible-xs">
 			<div class="hamburger-menu">
 				  <div class="bar"></div>	
@@ -119,6 +134,19 @@
 		<div class="avatar">
 			<img src="assets\images\photo.jpg" alt="avatar">
 		</div>
+		
+		
+			<!-- Progress bar scroll starts -->
+				<div class="mobilehidebar">
+
+				<div class="progress-container">
+					<div class="progress-bar" id="myBar"></div>
+				</div> 
+		      	</div>
+			<!-- Progress bar scroll ends --> 
+		
+		
+		
 
 		<div class="name" align="center">
 			<h1>@mhcdevs</h1>
@@ -1387,6 +1415,26 @@
 	<script src="formassets/js/main.js"></script>
 
 <!-- quote contact form scripts ends -->
+
+
+<!-- progress bar mobile + normal scroll starts -->
+
+<script>
+// When the user scrolls the page, execute myFunction 
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("mymBar").style.width = scrolled + "%";
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
+</script>
+
+<!-- progress bar mobile + normal scroll ends -->
+
+
 
        
 </body>
